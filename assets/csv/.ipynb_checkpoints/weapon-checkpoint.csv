@@ -1,0 +1,51 @@
+name,atk,atk_magik,weapon_mana,mana_cost,durability,max_durability,broken
+pe de cristal,8,4,3,4,10,13,False
+Hache de guerre,8,1,4,5,9,19,False
+Bton de feu,4,1,0,3,3,19,False
+Dague empoisonne,9,0,1,3,10,18,False
+Arc long,10,5,3,2,10,20,False
+Masse d'armes,3,1,3,4,4,10,False
+Lance d'argent,1,2,4,3,6,11,False
+Baguette magique,3,3,2,4,7,17,False
+Gourdin,4,1,5,5,3,17,False
+Katana,3,4,2,3,2,11,False
+Fouet de combat,5,3,0,4,8,15,False
+Fleuret du duelliste,9,2,3,5,3,10,False
+Marteau de guerre,9,1,0,1,3,13,False
+Glaive,1,2,3,4,10,20,False
+Rapire,10,5,5,5,7,20,False
+Arbalte,8,1,0,3,3,20,False
+Hallebarde,3,4,1,5,10,18,False
+Gantelet de force,8,0,0,3,5,11,False
+Canne de mage,3,1,5,5,7,14,False
+Livre de sortilges,8,3,5,3,9,15,False
+Flau,5,1,4,5,2,12,False
+Arc court,2,5,4,3,6,14,False
+Cimeterre,10,5,4,5,10,20,False
+Couteau de lancer,9,2,5,3,5,10,False
+Poignard,1,3,2,4,8,13,False
+pe btarde,6,0,4,4,8,17,False
+Hache double,4,0,5,1,3,17,False
+Bton de glace,6,2,2,5,7,12,False
+Dague runique,5,5,2,2,4,11,False
+Arc de chasse,1,3,5,3,5,16,False
+Marteau de Thor,10,0,3,2,6,15,False
+Lance de la foudre,6,1,1,5,7,10,False
+Baguette d'illusion,9,3,3,1,1,15,False
+Gourdin pineux,5,0,3,4,5,18,False
+Wakizashi,5,0,1,3,2,20,False
+Fouet barbel,1,5,2,5,3,12,False
+pe courte,8,4,0,1,2,12,False
+Marteau-piqueur,1,0,0,5,2,11,False
+Glaive du serpent,6,5,5,1,3,15,False
+Rapire en argent,6,0,5,2,6,13,False
+Arbalte  rptition,7,0,1,5,2,13,False
+Hallebarde du jugement,9,3,4,3,8,15,False
+Gantelet du titan,2,0,4,1,10,12,False
+Canne  feu,9,1,2,4,6,11,False
+Livre de connaissances,5,1,4,5,10,12,False
+Flau des tnbres,10,5,4,5,10,20,False
+Arc de la lune noire,10,0,5,3,8,18,False
+Cimeterre dmoniaque,3,2,3,5,10,19,False
+Couteau de jet empoisonn,2,5,4,5,10,17,False
+Poignard de l'ombre,3,5,5,1,2,13,False
