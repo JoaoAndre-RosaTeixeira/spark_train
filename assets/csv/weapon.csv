@@ -1,51 +1,51 @@
 id,name,atk,atk_magik,mana,mana_cost,durability,max_durability,broken
-1,pe de cristal,2,1,4,2,1,14,False
-2,Hache de guerre,3,5,0,3,1,10,False
-3,Bton de feu,5,5,2,3,6,12,False
-4,Dague empoisonne,6,2,5,4,9,13,False
-5,Arc long,3,1,2,2,10,10,False
-6,Masse d'armes,1,3,2,3,9,17,False
-7,Lance d'argent,1,0,5,5,9,17,False
-8,Baguette magique,8,5,2,1,10,10,False
-9,Gourdin,6,2,0,4,2,17,False
-10,Katana,6,1,1,3,7,12,False
-11,Fouet de combat,3,2,1,3,7,20,False
-12,Fleuret du duelliste,10,3,0,3,2,11,False
-13,Marteau de guerre,7,2,2,2,2,19,False
-14,Glaive,1,3,1,2,1,10,False
-15,Rapire,6,3,3,5,6,10,False
-16,Arbalte,7,0,5,4,7,19,False
-17,Hallebarde,7,4,5,4,1,11,False
-18,Gantelet de force,5,3,0,4,4,15,False
-19,Canne de mage,10,1,1,2,4,17,False
-20,Livre de sortilges,2,2,4,4,4,12,False
-21,Flau,7,5,0,1,5,10,False
-22,Arc court,8,4,2,4,7,16,False
-23,Cimeterre,8,5,3,1,4,10,False
-24,Couteau de lancer,6,5,5,5,2,16,False
-25,Poignard,6,5,3,2,6,17,False
-26,pe btarde,1,0,5,5,5,19,False
-27,Hache double,6,4,2,3,1,19,False
-28,Bton de glace,1,2,4,2,3,20,False
-29,Dague runique,8,3,3,3,5,20,False
-30,Arc de chasse,9,2,2,2,6,15,False
-31,Marteau de Thor,5,3,4,2,1,17,False
-32,Lance de la foudre,6,5,5,3,7,18,False
-33,Baguette d'illusion,9,4,0,5,5,16,False
-34,Gourdin pineux,1,3,5,3,2,15,False
-35,Wakizashi,7,0,5,4,9,10,False
-36,Fouet barbel,1,1,3,2,2,15,False
-37,pe courte,10,0,4,2,4,12,False
-38,Marteau-piqueur,8,5,5,2,4,10,False
-39,Glaive du serpent,1,1,3,5,3,14,False
-40,Rapire en argent,1,2,4,5,3,10,False
-41,Arbalte  rptition,4,3,2,1,4,15,False
-42,Hallebarde du jugement,4,1,1,5,2,18,False
-43,Gantelet du titan,7,2,3,3,6,10,False
-44,Canne  feu,8,5,0,2,6,15,False
-45,Livre de connaissances,2,3,2,2,6,13,False
-46,Flau des tnbres,2,4,5,1,8,17,False
-47,Arc de la lune noire,8,5,4,4,7,19,False
-48,Cimeterre dmoniaque,4,1,3,4,9,17,False
-49,Couteau de jet empoisonn,1,1,3,1,4,17,False
-50,Poignard de l'ombre,5,3,5,2,3,17,False
+1,pe de cristal,9,5,0,2,7,16,False
+2,Hache de guerre,3,2,1,2,3,17,False
+3,Bton de feu,7,1,2,3,10,11,False
+4,Dague empoisonne,3,3,1,4,7,12,False
+5,Arc long,9,3,4,3,7,15,False
+6,Masse d'armes,2,4,3,1,1,16,False
+7,Lance d'argent,6,5,5,2,5,10,False
+8,Baguette magique,3,1,4,1,3,19,False
+9,Gourdin,9,2,4,3,2,13,False
+10,Katana,10,0,2,3,5,14,False
+11,Fouet de combat,9,3,1,4,9,17,False
+12,Fleuret du duelliste,1,1,1,3,5,19,False
+13,Marteau de guerre,1,1,5,2,5,12,False
+14,Glaive,7,0,4,4,10,19,False
+15,Rapire,5,3,4,1,1,11,False
+16,Arbalte,10,1,4,3,2,16,False
+17,Hallebarde,4,0,2,2,6,18,False
+18,Gantelet de force,4,5,3,1,2,16,False
+19,Canne de mage,5,0,1,5,4,19,False
+20,Livre de sortilges,7,5,1,5,10,13,False
+21,Flau,1,3,4,2,7,12,False
+22,Arc court,2,4,4,1,2,10,False
+23,Cimeterre,5,4,1,2,9,20,False
+24,Couteau de lancer,7,1,1,5,7,10,False
+25,Poignard,9,1,0,2,3,10,False
+26,pe btarde,8,0,5,4,10,14,False
+27,Hache double,6,5,4,1,5,16,False
+28,Bton de glace,8,5,0,1,2,12,False
+29,Dague runique,8,1,1,4,4,18,False
+30,Arc de chasse,5,4,3,4,4,17,False
+31,Marteau de Thor,5,1,2,2,6,16,False
+32,Lance de la foudre,7,2,5,2,6,17,False
+33,Baguette d'illusion,4,1,1,2,3,14,False
+34,Gourdin pineux,10,3,2,3,3,19,False
+35,Wakizashi,8,5,3,3,9,15,False
+36,Fouet barbel,5,0,2,2,6,17,False
+37,pe courte,10,5,3,1,2,10,False
+38,Marteau-piqueur,5,5,5,5,9,16,False
+39,Glaive du serpent,3,4,4,3,8,20,False
+40,Rapire en argent,9,1,5,1,10,11,False
+41,Arbalte  rptition,4,2,2,4,6,12,False
+42,Hallebarde du jugement,4,5,0,4,2,20,False
+43,Gantelet du titan,1,0,5,2,5,19,False
+44,Canne  feu,7,0,3,1,5,15,False
+45,Livre de connaissances,10,0,1,1,9,11,False
+46,Flau des tnbres,1,1,3,1,8,15,False
+47,Arc de la lune noire,4,3,0,3,5,19,False
+48,Cimeterre dmoniaque,4,5,4,3,4,11,False
+49,Couteau de jet empoisonn,1,2,0,2,1,16,False
+50,Poignard de l'ombre,6,1,2,3,10,19,False

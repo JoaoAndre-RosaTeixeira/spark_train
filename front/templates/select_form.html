@@ -1,0 +1,32 @@
+
+{% extends "index.html" %}
+
+{% block header %}
+    <link rel="stylesheet" href="static/style/select_form.css">
+{% endblock %}
+
+
+{% block content %}
+    <form id="data-form" method="POST">
+
+        <label for="columns">Select column(s):</label><br>
+        {% for table, columns in data.items() %}
+            <fieldset>
+                <legend>{{ table }}</legend>
+                {% for column in columns %}
+                    <input type="checkbox" id="{{ table }}-{{ column }}" name="tables-{{ table }}[]" value="{{ column }}">
+                    <label for="{{ table }}-{{ column }}">{{ column }}</label><br>
+                {% endfor %}
+            </fieldset>
+        {% endfor %}
+
+        <label for="where">where:</label>
+        <input type="text" id="where" name="where"><br>
+
+        <label for="join">join:</label>
+        <input type="text" id="join" name="join"><br>
+
+        <input type="submit" value="Submit">
+    </form>
+    <script src="static/script/select_form.js"></script>
+{% endblock %}

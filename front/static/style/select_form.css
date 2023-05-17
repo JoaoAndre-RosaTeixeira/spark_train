@@ -1,0 +1,4 @@
+.navbar{
+    display: grid;
+    flex-direction: row;
+}

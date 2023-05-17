@@ -1,0 +1,10 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.navbar > ul {
+    list-style: none;
+    display: grid;
+    text-align: center;
+    grid-template-columns: repeat(auto-fit, minmax(10rem, auto));
+}
