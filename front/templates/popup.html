@@ -1,0 +1,25 @@
+{% block header %}
+    <link rel="stylesheet" href="static/style/popup.css">
+{% endblock %}
+
+
+{% block popup %}
+    <div id="popup" class="popup">
+        <h2>Fenêtre pop-up</h2>
+        <h2> </h2>
+        <div class="container_datas">
+{#        {% if datas != null %}#}
+{#            {% for dt in datas %}#}
+{#                <div>{{ dt.name }}</div>#}
+{#            {% endfor %}#}
+{#        {% endif %}#}
+        </div>
+        <button onclick="togglePopup()">Fermer</button>
+    </div>
+
+{% endblock %}
+
+
+{% block footer %}
+    <script src="static/script/popup.js"></script>
+{% endblock %}

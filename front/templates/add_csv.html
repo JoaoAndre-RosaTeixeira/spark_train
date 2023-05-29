@@ -1,0 +1,22 @@
+{% extends "index.html" %}
+
+{% block header %}
+    <link rel="stylesheet" href="static/style/add_csv.css">
+{% endblock %}
+
+
+
+
+{% block content %}
+
+    <div id="drop-zone" ondrop="handleDrop(event)" ondragover="handleDragOver(event)">
+        <span>Glissez et déposez les fichiers ici</span>
+    </div>
+    <input type="file" id="file-input" multiple>
+    <button onclick="handleFileSelect()">Sélectionner des fichiers</button>
+
+
+
+    <script src="static/script/add_csv.js"></script>
+{% endblock %}
+

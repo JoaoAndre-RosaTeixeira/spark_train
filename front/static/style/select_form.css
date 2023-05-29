@@ -2,3 +2,8 @@
     display: grid;
     flex-direction: row;
 }
+
+.select_tables{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(10rem, auto));
+}

@@ -15,50 +15,26 @@ class Request_SQL:
         self.read_files(files)
         
         
-    def select(self, columns, tables, joinsDict, where=""):
+    def select(self, table, columns='*', where="", join=""):
         
         if columns == "":
             columns = "*"
-        table = ""
-        joins = []
-        print(tables)
-
-        if isinstance(joinsDict, dict):
-            for tbl, clmns in joinsDict.items():
-                for clmn in clmns:
-                    if f"_id" in clmn and f"{tbl}_{clmn}" not in clmn:
-                        table = tbl
-                        joins.append(clmn)
-        else:
-            table = tables[0]
-
-        print(joins)
-        if joins:
-            joins=f"LEFT JOIN "+"LEFT JOIN ".join([ f"{element[:-3]} on {table}.{element} = {'.'.join(element.split('_'))} " for element in joins])
-        else:
-            joins = ""
-            print("pas de jointure détecté")
+        if join != "":
+            join = f"JOIN {join} on {table}.{join} = {join}.id"
         if where != "":
             where = f"WHERE {where}"
-
-        columnsStr = ', '.join([str(element) for element in columns])
+        
         query = f'''
-                SELECT {columnsStr}
+                SELECT {columns}
                 FROM {table} 
-                {joins}
+                {join}
                 {where}
                 '''
         print(query)
         # Exécution d'une requête SQL
         result = self.spark.sql(query)
-        print(result.show())
-
-        json_data = []
-        for rows in result.toJSON().collect():
-            json_data.append(json.loads(rows))
-
-        print(json_data)
-
+        json_data = [json.loads(row) for row in result.toJSON().collect()]
+        # Affichage des résultats
         return json_data
     
         
@@ -66,7 +42,7 @@ class Request_SQL:
 
     def update(self, table, column, conditon):
                 
-        updated_df = self.DFs[table].withColumn(f'{column}_updated', conditon.otherwise(col(column)))
+        updated_df = self.DFs[table].withColumn(f'{column}_updated', condition.otherwise(col(column)))
         # Mettre à jour la colonne "column" avec les valeurs de la colonne "column_updated"
         updated_df = updated_df.withColumn(column, col(f'{column}_updated'))
         # Supprimer la colonne "column_updated"
@@ -124,23 +100,6 @@ class Request_SQL:
         for table in self.spark.catalog.listTables():
             print(table, "\n")
             
-    def print_name_tables(self):
-        return json.dumps(self.spark.catalog.listTables())
-
-    def get_tables_columns(self):
-        tables_columns = {}
-        for table in self.spark.catalog.listTables():
-            table_name = table.name
-            columns = [col.name for col in self.spark.catalog.listColumns(table_name)]
-            tables_columns[table_name] = columns
-        return json.dumps(tables_columns)
-
-    def get_tables(self):
-        tables = {"tables": []}
-        for table in self.spark.catalog.listTables():
-            tables["tables"].append(table.name)
-
-        return tables
 
                     
     

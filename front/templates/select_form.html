@@ -1,4 +1,3 @@
-
 {% extends "index.html" %}
 
 {% block header %}
@@ -6,27 +5,48 @@
 {% endblock %}
 
 
-{% block content %}
-    <form id="data-form" method="POST">
 
+{% block content %}
+
+    {% block popup %}
+        {% include 'popup.html' %}
+    {% endblock %}
+    <label for="tables">Select table(s):</label><br>
+    <fieldset class="select_tables">
+        {% for table, columns in data.items() %}
+            <div>
+                <input onclick="choiceTable({{ table }})" type="checkbox" id="{{ table }}" name="{{ table }}[]"
+                       value="{{ table }}">
+                <label for="{{ table }}">{{ table }}</label><br>
+            </div>
+        {% endfor %}
+    </fieldset>
+
+
+
+    <form id="data-form" method="POST">
         <label for="columns">Select column(s):</label><br>
         {% for table, columns in data.items() %}
-            <fieldset>
-                <legend>{{ table }}</legend>
-                {% for column in columns %}
-                    <input type="checkbox" id="{{ table }}-{{ column }}" name="tables-{{ table }}[]" value="{{ column }}">
-                    <label for="{{ table }}-{{ column }}">{{ column }}</label><br>
-                {% endfor %}
-            </fieldset>
+            <div id="{{ table }}_show" style="display: none">
+                <fieldset>
+                    <legend>{{ table }}</legend>
+                    {% for column in columns %}
+                        <input type="checkbox" id="{{ table }}-{{ column }}" name="tables-{{ table }}[]"
+                               value="{{ column }}">
+                        <label for="{{ table }}-{{ column }}">{{ column }}</label><br>
+                    {% endfor %}
+                </fieldset>
+            </div>
         {% endfor %}
 
         <label for="where">where:</label>
         <input type="text" id="where" name="where"><br>
 
-        <label for="join">join:</label>
-        <input type="text" id="join" name="join"><br>
-
         <input type="submit" value="Submit">
     </form>
-    <script src="static/script/select_form.js"></script>
+
+{% endblock %}
+
+{% block footer %}
+<script src="static/script/select_form.js"></script>
 {% endblock %}
